@@ -1,0 +1,129 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Slider
+  - ScrollViewController
+  - male_model
+  - name_field
+  - character
+  - map
+  - tilemap
+  - ui_objects_panel
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: background
+    uniqueID: 3549880485
+    locked: 0
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: player
+    uniqueID: 707778025
+    locked: 0
+  - name: tail
+    uniqueID: 1696448345
+    locked: 0
+  - name: legs_back
+    uniqueID: 3165008459
+    locked: 0
+  - name: zagriv_back
+    uniqueID: 3910326723
+    locked: 0
+  - name: body
+    uniqueID: 3452536687
+    locked: 0
+  - name: head
+    uniqueID: 818385205
+    locked: 0
+  - name: leg_front_left
+    uniqueID: 3214897213
+    locked: 0
+  - name: mask
+    uniqueID: 2001836073
+    locked: 0
+  - name: armor
+    uniqueID: 3217242007
+    locked: 0
+  - name: hair
+    uniqueID: 295978605
+    locked: 0
+  - name: beard
+    uniqueID: 3252781573
+    locked: 0
+  - name: uho
+    uniqueID: 26015431
+    locked: 0
+  - name: clothUp
+    uniqueID: 433215983
+    locked: 0
+  - name: horn
+    uniqueID: 17027119
+    locked: 0
+  - name: legs_front
+    uniqueID: 2961211813
+    locked: 0
+  - name: boots
+    uniqueID: 1939863437
+    locked: 0
+  - name: assarmor
+    uniqueID: 3915877013
+    locked: 0
+  - name: pauldron
+    uniqueID: 1191428671
+    locked: 0
+  - name: wings
+    uniqueID: 2669704599
+    locked: 0
+  - name: backpack
+    uniqueID: 686141311
+    locked: 0
+  - name: kneepads
+    uniqueID: 4151474555
+    locked: 0
+  - name: zagriv
+    uniqueID: 1852001663
+    locked: 0
+  - name: helmet
+    uniqueID: 4161333419
+    locked: 0
+  - name: UI
+    uniqueID: 3347176999
+    locked: 0
+  - name: foreground
+    uniqueID: 2148934317
+    locked: 0
