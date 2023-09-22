@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en-us" style="width: 100%; height: 100%;">
+<head >
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>ZombieLandCharcterEditor</title>
+</head>
+<body style="text-align: center; padding: 0; border: 0; margin: 0; width: 100%; height: 100%;">
+  <canvas id="unity-canvas" style="width: 100%; height: 100%; background: #231F20"></canvas>
+  <div id="orientationMessage" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 24px;">Поверните устройство</div>
+  
+  <button id="fullscreenButton" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; display: none; background: transparent; border: none;"></button>
+
+  <script src="Build/SummerBuild5.loader.js"></script>
+  <script>
+    var canvas = document.querySelector("#unity-canvas");
+    var fullscreenButton = document.querySelector("#fullscreenButton");
+
+    function checkOrientation() {
+      if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
+        if (window.innerHeight > window.innerWidth) {
+          // Vertical orientation detected
+          canvas.style.display = "none";
+          document.querySelector("#orientationMessage").style.display = "block";
+          fullscreenButton.style.display = "none";
+        } else {
+          // Horizontal orientation
+          canvas.style.display = "block";
+          document.querySelector("#orientationMessage").style.display = "none";
+          fullscreenButton.style.display = "block";
+        }
+      } else {
+        document.querySelector("#orientationMessage").style.display = "none";
+        fullscreenButton.style.display = "none";
+      }
+    }
+
+    function toggleFullscreen() {
+      if (document.fullscreenElement || document.webkitFullscreenElement || document.mozFullScreenElement || document.msFullscreenElement) {
+        // Exit fullscreen
+        if (document.exitFullscreen) {
+          document.exitFullscreen();
+        } else if (document.webkitExitFullscreen) {
+          document.webkitExitFullscreen();
+        } else if (document.mozCancelFullScreen) {
+          document.mozCancelFullScreen();
+        } else if (document.msExitFullscreen) {
+          document.msExitFullscreen();
+        }
+      } else {
+        // Enter fullscreen
+        if (canvas.requestFullscreen) {
+          canvas.requestFullscreen();
+        } else if (canvas.webkitRequestFullscreen) {
+          canvas.webkitRequestFullscreen();
+        } else if (canvas.mozRequestFullScreen) {
+          canvas.mozRequestFullScreen();
+        } else if (canvas.msRequestFullscreen) {
+          canvas.msRequestFullscreen();
+        }
+      }
+    }
+
+    window.addEventListener("resize", checkOrientation);
+    checkOrientation();
+
+    fullscreenButton.addEventListener("click", toggleFullscreen);
+
+    createUnityInstance(canvas, {
+      dataUrl: "Build/SummerBuild5.data",
+      frameworkUrl: "Build/SummerBuild5.framework.js",
+      codeUrl: "Build/SummerBuild5.wasm",
+      streamingAssetsUrl: "StreamingAssets",
+      companyName: "dievil.ru",
+      productName: "ZombieLandCharcterEditor",
+      productVersion: "0.0.0.2",
+    });
+  </script>
+</body>
+</html>

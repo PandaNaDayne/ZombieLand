@@ -9,9 +9,6 @@ TagManager:
   - male_model
   - name_field
   - character
-  - map
-  - tilemap
-  - ui_objects_panel
   layers:
   - Default
   - TransparentFX
@@ -46,14 +43,8 @@ TagManager:
   - 
   - 
   m_SortingLayers:
-  - name: background
-    uniqueID: 3549880485
-    locked: 0
   - name: Default
     uniqueID: 0
-    locked: 0
-  - name: player
-    uniqueID: 707778025
     locked: 0
   - name: tail
     uniqueID: 1696448345
@@ -123,7 +114,4 @@ TagManager:
     locked: 0
   - name: UI
     uniqueID: 3347176999
-    locked: 0
-  - name: foreground
-    uniqueID: 2148934317
     locked: 0
