@@ -9,6 +9,10 @@ TagManager:
   - male_model
   - name_field
   - character
+  - map
+  - tilemap
+  - ui_objects_panel
+  - Photo
   layers:
   - Default
   - TransparentFX
